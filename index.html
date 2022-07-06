@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>FaceBook</title>
+</head>
+
+
+<style>
+        .storyImage{
+            height: 20em;
+            width: 14em;
+            border-radius: 1em;
+            box-shadow: 0em 0.1em 0.3em rgb(236, 235, 235);
+        }
+
+        .position1{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            padding: 0.5em;
+        }
+
+        #createStory{
+            height: 5em;
+            width: 14em;
+            border-radius: 0em 0em 1em 1em;
+            background-color: rgb(248, 248, 248);
+            position: absolute;
+            top: 16em;
+            box-shadow: 0em 0.1em 0.3em rgb(211, 209, 209);
+        }
+
+        .firstT{
+            color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            font-weight: 400;
+            position: absolute;
+            top: 17em;
+            left: 4em;
+            
+        }
+
+        #createStory1{
+            position: absolute;
+            top: 16em;
+        }
+
+        .over{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .secondT{
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            font-weight: 400;
+            position: absolute;
+            top: 16em;
+            left: 4em;
+        }
+
+        .circleImage{
+            height: 4em;
+            width: 4em;
+            border-radius: 3em;
+            border: 2em rgb(5, 5, 197);
+            position: absolute;
+            top: 2em;
+            left: 2em;
+        }
+    
+        .circleImage1{
+            height: 4em;
+            width: 4em;
+            border-radius: 3em;
+            border: 2em rgb(5, 5, 197);
+            position: absolute;
+        }
+
+        #mind{
+            height: 3em;
+            width: 40em;
+            background-color: rgb(240, 240, 240);
+            border-radius: 3em;
+            border: none;
+            padding: 2em;
+            margin-left: 6em;
+        }
+
+        #secondSection{
+            display: flex;
+        }
+
+        hr{
+            width: 39em;
+            margin: 2em 0em;
+            background-color: gray;
+        }
+
+        .fa-video-camera{
+            font-size: 2em;
+            color: #df4a69;
+            
+        }
+
+        .fa-picture-o{
+            font-size: 2em;
+            color: #df4a69;
+            
+        }
+
+        .fa-smile-o{
+            font-size: 2em;
+            color: #df4a69;
+            
+        }
+
+        #icon{
+            display: flex;
+            padding-left: 3em;
+        }
+
+        #iconT{
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-left: 1em;
+            margin-top: 0.5em;
+        }
+
+        .secondCard{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0.1em -0.2em 0.2em rgb(211, 209, 209);
+            box-shadow: 0.1em 0.2em 0.1em rgb(236, 235, 235);
+            padding: 2em;
+            bottom: 15em;
+            height: 10em;
+            width: 40em;
+            border-radius: 1em;
+            position: absolute;
+            top: 24em;
+            left: 20em;
+        }
+
+        #online{
+            height: 0.8em;
+            width: 0.8em;
+            border-radius: 0.5em;
+            background-color: rgb(16, 151, 16);
+            margin-left: 3.1em;
+            margin-top: 3em;
+            position: relative;
+            border: 1em white;
+        }
+
+        .pad{
+            padding-left: 1.5em;
+        }
+
+        #create{
+            height: 2.5em;
+            width: 9em;
+            border-radius: 2em;
+            background-color: rgb(240, 240, 240);
+            border: 1em #df4a69;
+        }
+
+        #createT{
+            font-family: sans-serif;
+            font-weight: 700;
+            color: blue;
+            font-size: 12px;
+            margin-left: 0.8em;
+            margin-top: 0.1em;
+
+        }
+
+        #room{
+            display: flex;
+            margin-top: -1.6em;
+            margin-left: 1.2em;
+        }
+
+        .thirdCard{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0.1em -0.2em 0.2em rgb(211, 209, 209);
+            box-shadow: 0.1em 0.2em 0.1em rgb(236, 235, 235);
+            padding: 2em;
+            bottom: 15em;
+            height: 3em;
+            width: 40em;
+            border-radius: 1em;
+            position: absolute;
+            top: 40em;
+            left: 20em;
+        }
+
+        .fa-chevron-circle-right{
+            font-size: 2.5em;
+            background-color: white;
+            margin-right: 3em;
+        }
+
+        .fa-plus-circle{
+            font-size: 2.5em;
+            color: blue;
+        }
+
+</style>
+
+
+<body>
+
+    <div class="over">
+  
+        <div class="position1">
+            
+                <img src="/portrait-gc5ec71753_1920.jpg" alt="a girl photo" class="storyImage">
+                <div id="createStory"></div>
+                <p class="firstT">Create story </p>
+        </div>
+
+     <! second story>
+
+        <div class="position1">
+            <img src="/girl-gc9b092033_1920.jpg" alt="a girl photo" class="storyImage">
+            <div id="createStory1"></div>
+            <p class="secondT">Anita Baker</p>
+            <img src="/makeup-brushes-1761648_1920.jpg" alt="makeupbrushes" class="circleImage">
+        </div>
+
+     <! third story>
+
+        <div class="position1">
+            <img src="/woman-590490_1920.jpg" alt="a girl photo" class="storyImage">
+            <div id="createStory1"></div>
+            <p class="secondT">Khan Singh <br> Raj</p>
+            <img src="/holi-2416686_1920.jpg" alt="makeupbrushes" class="circleImage">
+        </div>
+
+        <! fourth story>
+
+        <div class="position1">
+            <img src="/ease-3134828_1920.jpg" alt="a girl photo" class="storyImage">
+            <div id="createStory1"></div>
+            <p class="secondT">Sophia Dances</p>
+            <img src="/lips-1690875_1920.jpg" alt="makeupbrushes" class="circleImage">
+
+        </div>
+
+        <! fifth story>
+
+        <div class="position1">
+            <img src="/fantasy-2506830_1920.jpg" alt="a girl photo" class="storyImage">
+            <div id="createStory1"></div>
+            <p class="secondT">Gothic-Art Queen</p>
+            <img src="/mosaic-3394375_1920.jpg" alt="makeupbrushes" class="circleImage">
+
+        </div>
+
+    </div>
+    
+
+         <div class="secondCard">
+
+                    <div id="secondSection">
+                            <img src="/portrait-gc5ec71753_1920.jpg" alt="makeupbrushes" class="circleImage1">
+                            <input type="search" name="What's on your mind Anita" id="mind">
+                    </div>
+
+                            <hr>
+
+                    <div id="icon">  
+
+                        <div id="icon">
+                            <i class="fa fa-video-camera"></i>
+                            <p id="iconT">Live Video</p>
+                        </div>
+
+                        <div id="icon">
+                            <i class="fa fa-file-image-o"></i>
+                            <p id="iconT">Picture/Video</p>
+                        </div>
+
+                        <div id="icon">
+                            <i class="fa fa-file-image-o"></i>
+                            <p id="iconT">Feeling/Activity</p>
+                        </div>
+
+                    </div>
+            </div>
+
+            <! Third Section>
+             
+             <div class="thirdCard">
+                <div id="secondSection">
+
+                        <div>
+                            <div id="create"></div>
+                            <div id="room">
+                                <i class="fas fa-video"></i>
+                                <p id="createT">Create Room</p>
+                            </div>
+                        </div>
+                        
+                    <div class="pad">
+                            <div id="secondSection">  
+                                <div id="online"></div>
+                                <img src="/girl-gc9b092033_1920.jpg" alt="girl" class="circleImage1">
+                            </div>
+                    </div>
+
+                    <div class="pad">
+                            <div id="secondSection">  
+                                <div id="online"></div>
+                                <img src="ease-3134828_1920.jpg" alt="girl" class="circleImage1">
+                            </div>
+                    </div>
+
+                    <div class="pad">
+                            <div id="secondSection">  
+                                <div id="online"></div>
+                                <img src="/fantasy-2506830_1920.jpg" alt="girl" class="circleImage1">
+                            </div>
+                    </div>
+
+                <div class="pad">
+                        <div id="secondSection">  
+                            <div id="online"></div>
+                            <img src="/portrait-gc5ec71753_1920.jpg" alt="girl" class="circleImage1">
+                        </div>
+                </div>
+
+                    <div class="pad">
+                        <div id="secondSection">  
+                            <div id="online"></div>
+                            <img src="/woman-590490_1920.jpg" alt="girl" class="circleImage1">
+                        </div>
+                </div>
+
+                <div class="pad">
+                        <div id="secondSection">  
+                            <div id="online"></div>
+                            <img src="/makeup-brushes-1761648_1920.jpg" alt="girl" class="circleImage1">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        
+</body>
+</html>
